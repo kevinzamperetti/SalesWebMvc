@@ -50,6 +50,8 @@ namespace SalesWebMvc
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                
+                //Call method Seed for insert and persist data in DB
                 seedingService.Seed();
             }
             else
